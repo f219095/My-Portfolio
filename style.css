@@ -52,7 +52,9 @@ header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #333;
-    animation: fadeInUp 1s ease;
+    overflow: hidden; /* Hide overflow to prevent flickering */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: slideName 5s linear infinite; /* Apply animation */
 }
 
 header p {
@@ -195,7 +197,7 @@ section {
 
 .skill .bar {
     height: 20px;
-    background-color: #007bff;
+    background-color: #f2f3f5; /* Light blue-gray background color for bars */
     margin-bottom: 10px;
     border-radius: 5px;
     overflow: hidden;
@@ -204,28 +206,32 @@ section {
 .skill .bar span {
     display: block;
     height: 100%;
-    background-color: #333;
+    background-color: #007bff; /* Blue color for the filled portion of the bar */
     transition: width 0.5s ease;
 }
 
 .contact {
-    padding: 80px 0;
+    padding: 20px;
 }
 
 .contact .title {
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #ff4500; /* Orange color */
+    font-style: italic; /* Italics */
+    margin-bottom: 20px;
 }
 
 .contact-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .form-container {
-    flex-basis: 50%;
+    flex-basis: 100%;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .form-container h3 {
@@ -272,7 +278,7 @@ section {
 }
 
 .contact-info {
-    flex-basis: 50%;
+    flex-basis: 100%;
     padding: 20px;
 }
 
@@ -389,23 +395,8 @@ footer {
     color: #666;
     margin-bottom: 5px;
 }
-/* Styling for the education section */
 
-
-.education-item:hover {
-    transform: translateY(-5px); /* Add slight lift on hover */
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
-    overflow: hidden; /* Hide overflow to prevent flickering */
-    white-space: nowrap; /* Prevent text from wrapping */
-    animation: slideName 5s linear infinite; /* Apply animation */
-}
-
-/* Define keyframes for the animation */
+/* Keyframes for Header Animation */
 @keyframes slideName {
     0% {
         transform: translateX(100%);
@@ -420,57 +411,3 @@ header h1 {
         transform: translateX(-100%);
     }
 }
-/* Styling for section headings */
-h2 {
-    font-size: 2rem;
-    color: #007bff; /* Blue color */
-    font-style: italic; /* Italics */
-    margin-bottom: 20px;
-}
-
-/* Styling for contact details */
-.contact .title {
-    font-size: 1.8rem;
-    color: #ff4500; /* Orange color */
-    font-style: italic; /* Italics */
-    margin-bottom: 20px;
-}
-/* Styling for the education section */
-
-/* Styling for skill bars */
-.bar {
-    position: relative;
-    height: 20px;
-    background-color: #f2f3f5; /* Light blue-gray background color for bars */
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.bar span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #007bff; /* Blue color for the filled portion of the bar */
-    transition: width 0.5s ease;
-}
-
-.bar-value {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-    color: #333; /* Dark gray color for the skill value */
-    font-weight: bold;
-}
-
-/* Increase specificity to override the previous width style */
-.skill .bar span {
-    width: 0; /* Initialize width to 0 */
-}
-
-/* Adjust width of span based on percentage */
-.skill:hover .bar span {
-    width: calc(var(--skill-width) * 1%);
-}
-
