@@ -1,210 +1,183 @@
 <!DOCTYPE html>
-<!-- Created Ahmad Hassan -->
-<html>
+<html lang="en">
 <head>
-    <title>Personal Portfolio Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Hassan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <script src="code.js"></script>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Ahmad Portfo<span>lio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">Personal Statment</a></li>
-                <li><a href="#services" class="menu-btn">Achievements</a></li>
-                <li><a href="#skills" class="menu-btn">My Skills</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="Profile"> 
-            <img class="avatar" src="https://github.com/f219095/My-Portfolio/blob/main/ahmad.jpeg?raw=true" alt="Avatar">
-        </div>
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Ahmad Hassan</div>
-                <div class="text-3">And I'm a Student<span class="typing"></span></div>
-                <div class="text-1">-->Currently studying in FAST NUCES.</div>
-                <div class="text-1">Age: 22(YEARS) </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personal statment section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">Personal Statement</h2>
+    <div class="container">
+        <header>
+            <h1>Ahmad Hassan</h1>
+            <p>Student | Computer Science Enthusiast</p>
+        </header>
+        
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <section id="about">
             <div class="about-content">
-                <div class="column left">
-                    <img src="https://github.com/f219095/My-Portfolio/blob/main/ahmad.jpeg?raw=true" alt="">
+                <div class="about-img">
+                    <img src="https://github.com/f219095/My-Portfolio/blob/main/ahmad.jpeg?raw=true" alt="Ahmad Hassan">
                 </div>
-                <div class="column right">
-                    <div class="text">I'm Ahmad and I'm a<span class="typing-2"></span></div>
-                    <p> Highly motivated and hardworking individual, who has recently completed his FSC, achieving excellent grades in both Maths and Science. Passionate about problem-solving and innovation, I am eager to embark on an apprenticeship in the engineering industry to further cultivate my scientific interests and pave the way for a rewarding career as a computer scientist. With a strong foundation in analytical thinking and a drive for continuous learning, I aspire to not only excel in the field of computer science but also contribute to groundbreaking advancements that positively impact society. My long-term ambition extends beyond technical proficiency, aiming to lead innovative projects and mentor aspiring developers, thereby fostering a culture of innovation and collaboration in the tech industry.</p>
+                <div>
+                    <h2>About Me</h2>
+                    <p>I'm a highly motivated and hardworking individual with a passion for problem-solving and innovation. Currently pursuing a degree in Computer Science at FAST NUCES, I thrive on challenges and enjoy diving into the world of technology to create solutions that make a difference. With a keen interest in web development, database management, and UI/UX design, I'm continuously expanding my skills and knowledge to stay at the forefront of the ever-evolving tech industry.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Achievements section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">Achievements</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-trophy" ></i>
-                        <div class="text">Gold Medalist</div>
-                        <p>I proudly received both a bronze and silver medal from my university, recognizing my dedication and excellence in academic pursuits, marking a milestone in my journey of achievement.</p>
-                    </div>
+        </section>
+        
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services">
+                <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Design and development of modern, responsive websites using HTML, CSS, and JavaScript.</p>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-award"></i>
-                        <div class="text">Scholarship</div>
-                        <p>Secured a fully funded scholarship for my college education is  a  profound validation of my academic dedication and potential.</p>
-                    </div>
+                <div class="service">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>Proficient in managing databases using SQL, ensuring efficient data storage and retrieval.</p>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-hands"></i>
-                        <div class="text">Social work</div>
-                        <p>Apart from my academics, co-curricular and extra curricular, I was also a volunteer for a local organization which worked for the cause of the child labourers.</p>
-                    </div>
+                <div class="service">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive user interfaces with a focus on user experience and interaction design.</p>
                 </div>
-               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Skilled in HTML, CSS, JavaScript, C++, and MySQL, I possess a versatile toolkit for software development. With HTML and CSS, I create visually appealing web interfaces, while JavaScript adds dynamic functionality. Proficiency in C++ enables me to develop robust software solutions, and MySQL expertise ensures efficient database management. With these skills, I am equipped to tackle diverse projects with precision and innovation in the software development field.</p>
-                        <p>Thank You !</p>  
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h2>HTML</h2>
+                    <div class="bar">
+                        <span style="width: 90%;"></span>
+                    </div>
                 </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line html"></div>
+                <div class="skill">
+                    <h2>CSS</h2>
+                    <div class="bar">
+                        <span style="width: 80%;"></span>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line css"></div>
+                </div>
+                <div class="skill">
+                    <h2>JavaScript</h2>
+                    <div class="bar">
+                        <span style="width: 75%;"></span>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line js"></div>
+                </div>
+                <div class="skill">
+                    <h2>Python</h2>
+                    <div class="bar">
+                        <span style="width: 70%;"></span>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>My sql</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line mysql"></div>
+                </div>
+                <div class="skill">
+                    <h2>SQL</h2>
+                    <div class="bar">
+                        <span style="width: 85%;"></span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-items">
+                <div class="education-item">
+                    <h3>FAST National University</h3>
+                    <p>Bachelor's in Computer Science (2021 - Present)</p>
+                    <p>Achieved Dean's List recognition for outstanding academic performance.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Superior College</h3>
+                    <p>Intermediate in Computer Science (2018 - 2020)</p>
+                    <p>Received scholarship for maintaining top grades throughout the academic year.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Chenab College</h3>
+                    <p>Matriculation (2016 - 2018)</p>
+                    <p>Position holder in the board exams and awarded with a gold medal.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact Details</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>If anyone wants to take help me regarding HTML and CSS feel free contact me.</p>
-                    <div class="icons">
-                        <div class="row">
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Details</h2>
+                <div class="contact-content">
+                    <div class="form-container">
+                        <h3>Get in Touch</h3>
+                        <form action="#">
+                            <div class="input-field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="info">
                             <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Ahmad Hassan</div>
+                            <div class="details">
+                                <span class="head">Name</span>
+                                <span class="sub-title">Ahmad Hassan</span>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="info">
                             <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">City Chiniot</div>
+                            <div class="details">
+                                <span class="head">Address</span>
+                                <span class="sub-title">City Chiniot</span>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="info">
                             <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">ahmadhasanmian@gmail.com</div>
+                            <div class="details">
+                                <span class="head">Email</span>
+                                <span class="sub-title">ahmadhasanmian@gmail.com</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- footer section start -->
+        </section>
+        
+    </div>
+    
     <footer>
-        <span>Created By Ahmad Hassan </span>
+        <p>Follow me on social media:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/your-facebook-profile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/your-twitter-profile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/your-instagram-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social media icons and links as needed -->
+        </div>
+        <p>Created By Ahmad Hassan</p>
     </footer>
+    
 </body>
 </html>
